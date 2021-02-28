@@ -49,7 +49,7 @@ if(menu == 1) {
     option = prompt("1 - add a programing language\n2 - print all programing languages\n3 - update programing language\n4 - delete programing language");
     switch(option) {
         case '1':
-            createNewPrograminmgLanguage(programingLanguages);
+            createNewProgramingLanguage(programingLanguages);
             break;
         case '2':
             readProgramingLanguages(programingLanguages);

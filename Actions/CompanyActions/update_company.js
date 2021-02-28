@@ -15,5 +15,7 @@ function updateCompany(companies) {
             break;
         case '2':
             
+
+            
     }
 }
