@@ -1,0 +1,11 @@
+const workingStatus = {
+  UNEMPLOYED: "UNEMPLOYED",
+  FREELANCER: "FREELANCER",
+  EMPLOYEED: "EMPLOYEED",
+};
+
+const developerType = {
+  FRONTEND: "FRONTEND",
+  BACKEND: "BACKEND",
+  FULLSTACK: "FULLSTACK",
+};
