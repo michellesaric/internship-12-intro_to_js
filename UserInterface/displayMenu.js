@@ -16,3 +16,5 @@ const displayMenu = (title, options, actions) => {
     }
   }
 };
+
+mainMenu();
