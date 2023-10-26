@@ -1,17 +1,17 @@
-const filterDevelopersByType = () => {
-  let type = "";
+const filterDevelopersByWorkingStatus = () => {
+  let status = "";
 
   const input = prompt(
     "Choose the type you want to filter by:\n\n" +
-      "1 - Frontend\n" +
-      "2 - Backend\n" +
-      "3 - Fullstack\n" +
+      "1 - Unemployeed\n" +
+      "2 - Freelancer\n" +
+      "3 - Employeed\n" +
       "4 - Go back to main menu",
     1
   );
 
   if (!isNaN(input) && parseInt(input) >= 1 && parseInt(input) <= 3) {
-    type = Object.values(developerType)[input];
+    status = Object.values(workingStatus)[input];
   } else if (!isNaN(input) && parseInt(input) === 4) {
     mainMenu();
   } else {
@@ -20,16 +20,16 @@ const filterDevelopersByType = () => {
   }
 
   const filteredDevelopers = developers.filter(
-    (developer) => developer.developerType === type
+    (developer) => developer.workingStatus === status
   );
 
   if (filteredDevelopers.length > 0) {
     alert(
-      `Developers with type '${type}':\n\n${filteredDevelopers
+      `Developers with working status '${status}':\n\n${filteredDevelopers
         .map((developer) => developer.fullName)
         .join("\n")}`
     );
   } else {
-    alert(`No developers with type '${type}' found.`);
+    alert(`No developers with working status '${status}' found.`);
   }
 };
