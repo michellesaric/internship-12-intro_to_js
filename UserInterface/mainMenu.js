@@ -3,7 +3,14 @@ const mainMenu = () => {
 
   while (isGoingAgain) {
     const choice = prompt(
-      "Please select the number for the following actions:\n1 - Actions with Developers\n2 - Actions with Companies\n3 - Actions with Programming languages\n4 - Filter for developers by type\n5 - Filter for developers by programming languages\n6 - Filter for developers by working status"
+      "~~~~~~~~~~MAIN MENU~~~~~~~~~~\n\n" +
+        "Please select the number for the following actions:\n\n" +
+        "1 - Actions with Developers\n" +
+        "2 - Actions with Companies\n" +
+        "3 - Actions with Programming languages\n" +
+        "4 - Filter for developers by type\n" +
+        "5 - Filter for developers by programming languages\n" +
+        "6 - Filter for developers by working status"
     );
 
     if (!isNaN(choice) && parseInt(choice) >= 1 && parseInt(choice) <= 6) {
