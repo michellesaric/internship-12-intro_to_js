@@ -1,10 +1,10 @@
 const actionsWithDevelopers = () => {
   const developerOptions = [
-    "Create a new developer",
-    "Show list of all developers",
-    "Update a certain developer",
-    "Delete a certain developer",
-    "Go back to main menu",
+    "1 - Create a new developer",
+    "2 - Show list of all developers",
+    "3 - Update a certain developer",
+    "4 - Delete a certain developer",
+    "5 - Go back to main menu",
   ];
 
   const developerActions = [

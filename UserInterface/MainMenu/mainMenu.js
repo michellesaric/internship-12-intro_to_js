@@ -21,5 +21,3 @@ const mainMenu = () => {
 
   displayMenu("~~~~~~MAIN MENU~~~~~~", mainOptions, mainActions);
 };
-
-

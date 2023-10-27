@@ -1,10 +1,10 @@
 const actionsWithProgrammingLanguages = () => {
   const programmingLanguageOptions = [
-    "Insert a new programming language",
-    "Show list of all programming languages",
-    "Update a certain programming language",
-    "Delete a certain programming language",
-    "Go back to main menu",
+    "1 - Insert a new programming language",
+    "2 - Show list of all programming languages",
+    "3 - Update a certain programming language",
+    "4 - Delete a certain programming language",
+    "5 - Go back to main menu",
   ];
 
   const programmingLanguageActions = [
