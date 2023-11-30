@@ -15,6 +15,6 @@ const createNewProgrammingLanguage = () => {
   };
 
   programmingLanguages.push(newLanguage);
-  mainMenu();
+  actionsWithProgrammingLanguages();
   return;
 };
