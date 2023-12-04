@@ -1,23 +1,23 @@
 const programmingLanguages = [
   {
     id: 1,
-    name: "Python",
-  },
-  {
-    id: 2,
-    name: "JavaScript",
-  },
-  {
-    id: 3,
     name: "C",
   },
   {
-    id: 4,
+    id: 2,
     name: "C++",
   },
   {
-    id: 5,
+    id: 3,
     name: "C#",
+  },
+  {
+    id: 4,
+    name: "JavaScript",
+  },
+  {
+    id: 5,
+    name: "Python",
   },
   {
     id: 6,
@@ -28,17 +28,17 @@ const programmingLanguages = [
 const companies = [
   {
     id: 1,
-    fullName: "GetByBus",
+    fullName: "Aysnc Labs",
     employees: [1],
   },
   {
     id: 2,
-    fullName: "Evolutio",
+    fullName: "GetByBus",
     employees: [2],
   },
   {
     id: 3,
-    fullName: "Aysnc Labs",
+    fullName: "Evolutio",
     employees: [3],
   },
 ];
