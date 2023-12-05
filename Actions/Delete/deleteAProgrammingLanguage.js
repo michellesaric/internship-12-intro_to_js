@@ -5,23 +5,34 @@ const deleteAProgrammingLanguage = () => {
       .join("\n")}\nChoose the id of the language you want to delete:`
   );
 
-  if (
-    isNaN(languageId) ||
-    languageId < 1 ||
-    languageId > programmingLanguages.length
-  ) {
+  const max = Math.max(...programmingLanguages.id);
+
+  if (isNaN(languageId) || languageId < 1 || languageId > max) {
     alert("The input you put in is invalid");
     actionsWithProgrammingLanguages();
   }
 
-  const deletedLanguageIndex = programmingLanguages.findIndex(
-    (programmingLanguage) => programmingLanguage.id == languageId
+  const confirmation = confirm(
+    `Are you sure you wish to delete ${programmingLanguages[languageId].name}`
   );
-  programmingLanguages.splice(deletedLanguageIndex, 1);
-  alert("Programming language deleted successfully.");
 
-  for (let i = deletedLanguageIndex; i < programmingLanguages.length; i++) {
-    programmingLanguages[i].id = i + 1;
+  if (confirmation) {
+    const deletedLanguageIndex = programmingLanguages.findIndex(
+      (programmingLanguage) => programmingLanguage.id == languageId
+    );
+    programmingLanguages.splice(deletedLanguageIndex, 1);
+    alert("Programming language deleted successfully.");
+
+    for (const developer of developers) {
+      const languageIndex =
+        developer.programmingLanguages.indexOf(languageIdToRemove);
+
+      if (languageIndex !== -1) {
+        developer.programmingLanguages.splice(languageIndex, 1);
+      }
+    }
+  } else {
+    deleteAProgrammingLanguage();
   }
 
   actionsWithProgrammingLanguages();
